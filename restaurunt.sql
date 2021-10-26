@@ -26,3 +26,15 @@ SELECT * FROM restaurunt WHERE doesTakeout = TRUE
 SELECT * FROM restaurunt WHERE distance < 2
 SELECT * FROM restaurunt WHERE lastVisit ?
 SELECT * FROM restaurunt WHERE stars = 5 lastVisit ?
+
+
+
+SELECT * FROM restaurunt order by distance desc;
+SELECT * FROM restaurunt order by distance asc limit 2;
+SELECT * FROM restaurunt order by stars desc;
+SELECT * FROM restaurunt order by stars desc limit 2 where distance < 2;
+SELECT COUNT * FROM restaurunt;
+SELECT COUNT category FROM restaurunt;
+SELECT *, avg(stars) FROM GROUP BY category;
+SELECT *, max(stars) FROM GROUP BY category;
+
